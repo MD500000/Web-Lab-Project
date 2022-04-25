@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   
+
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+    border-radius:5px;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+
+   .logo {
+    font-size: 32px;
+   }
+
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    align-items:center;
+    text-align:center;
+   }
+   .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+
+
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+
+
+   .header {
+    padding: 30rem;
+    text-align: center;
+    background-image:url("../images/funny-dog-captions-1563456605.png");
+    background-size:cover;
+    color: white;
+    font-size: 30px;
+  }
+
+
+
+  .header > h1{
+
+    color:#28E994;
+  }
+
+
+
+  .header > p{
+
+    color:#28E994;
+  }
+
+
+
+  h1{
+      margin-bottom:2rem;
+  }
+
+
+
+  .header2{
+    padding: 20rem;
+    text-align: center;
+    background-color:#25A8F6;
+    background-size:cover;
+    color: white;
+    font-size: 30px;
+  }
+
+
+
+  #slider{
+      max-height:100%;
+      max-height:100%;
+  }
+
+
+
+
+
+#slider {
+
+    width: 80%;
+    margin:0;
+    margin-top:5rem;
+    margin-left:13rem;
+    height:50%;
+}
+
+
+
+#slider img{
+    width:100%;
+    height:auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color:black;
+}
+.slick-slide {
+    opacity: 0.3;
+}
+.slick-active {
+    opacity: 0.5
+}
+.slick-current {
+    opacity: 1;
+}
+
+
+
+img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+.slick-track { display: flex; align-items: stretch; }
+
+.slick-slide { height: auto; flex: 1; }
+
+
+
+/*Forum Registration start*/
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/*Forum Registration end*/
+
