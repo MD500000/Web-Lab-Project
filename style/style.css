@@ -2,175 +2,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
-   body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight:bold;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
-   
+}
 
-   .navbar {
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: teal;
     color: #fff;
-    border-radius:5px;
-   }
-   .nav-links a {
+}
+
+.nav-links a {
     color: #fff;
-   }
+}
 
-   .logo {
+.logo {
     font-size: 32px;
-   }
+}
 
-   .menu {
+.menu {
     display: flex;
     gap: 1em;
     font-size: 18px;
-    align-items:center;
-    text-align:center;
-   }
-   .menu li:hover {
+    align-items: center;
+    text-align: center;
+}
+
+.menu li:hover {
     background-color: #4c9e9e;
     border-radius: 5px;
     transition: 0.3s ease;
-   }
-   .menu li {
+}
+
+.menu li {
     padding: 5px 14px;
-   }
+}
 
+.services {
+    position: relative;
+}
 
-   .services {
-    position: relative; 
-   }
-   .dropdown {
+.dropdown {
     background-color: rgb(1, 139, 139);
     padding: 1em 0;
-    position: absolute; 
+    position: absolute;
     display: none;
     border-radius: 8px;
     top: 35px;
-   }
-   .dropdown li + li {
+}
+
+.dropdown li+li {
     margin-top: 10px;
-   }
-   .dropdown li {
+}
+
+.dropdown li {
     padding: 0.5em 1em;
     width: 8em;
     text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-
-
-
-   .header {
-    padding: 30rem;
-    text-align: center;
-    background-image:url("../images/funny-dog-captions-1563456605.png");
-    background-size:cover;
-    color: white;
-    font-size: 30px;
-  }
-
-
-
-  .header > h1{
-
-    color:#28E994;
-  }
-
-
-
-  .header > p{
-
-    color:#28E994;
-  }
-
-
-
-  h1{
-      margin-bottom:2rem;
-  }
-
-
-
-  .header2{
-    padding: 20rem;
-    text-align: center;
-    background-color:#25A8F6;
-    background-size:cover;
-    color: white;
-    font-size: 30px;
-  }
-
-
-
-  #slider{
-      max-height:100%;
-      max-height:100%;
-  }
-
-
-
-
-
-#slider {
-
-    width: 80%;
-    margin:0;
-    margin-top:5rem;
-    margin-left:13rem;
-    height:50%;
 }
 
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
 
+.services:hover .dropdown {
+    display: block;
+}
 
-#slider img{
-    width:100%;
-    height:auto;
+.header {
+    padding: 30rem;
+    text-align: center;
+    background-image: url("../images/funny-dog-captions-1563456605.png");
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+}
+
+.header>h1 {
+    color: #28E994;
+}
+
+.header>p {
+    color: #28E994;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.header2 {
+    padding: 20rem;
+    text-align: center;
+    background-color: #25A8F6;
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+}
+
+#slider {
+    max-height: 100%;
+    max-height: 100%;
+}
+
+#slider {
+    width: 80%;
+    margin: 0;
+    margin-top: 5rem;
+    margin-left: 13rem;
+    height: 50%;
+}
+
+#slider img {
+    width: 100%;
+    height: auto;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    color:black;
+    color: black;
 }
+
 .slick-slide {
     opacity: 0.3;
 }
+
 .slick-active {
     opacity: 0.5
 }
+
 .slick-current {
     opacity: 1;
 }
 
-
-
-img{
-    max-width:100%;
-    max-height:100%;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
+.slick-track {
+    display: flex;
+    align-items: stretch;
+}
 
-
-.slick-track { display: flex; align-items: stretch; }
-
-.slick-slide { height: auto; flex: 1; }
-
+.slick-slide {
+    height: auto;
+    flex: 1;
+}
 
 
 /*Forum Registration start*/
@@ -299,3 +291,30 @@ hr {
 
 /*Forum Registration end*/
 
+.body-section {
+    height: 50em;
+    background-color: khaki;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.body-section img {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 205px;
+    width: 240px;
+    height: 240px;
+}
+
+#header-groomers {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 12rem;
+    margin-left: 3rem;
+    color: #4c9e9e;
+}
