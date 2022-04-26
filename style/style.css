@@ -134,7 +134,7 @@ h1 {
 
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+    color: brown;
 }
 
 .slick-slide {
@@ -299,6 +299,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 3rem;
+    border-radius: 15px;
 }
 
 .body-section img {
@@ -317,4 +318,25 @@ hr {
     margin-bottom: 12rem;
     margin-left: 3rem;
     color: #4c9e9e;
+}
+
+.body-section div {
+    margin-left: 1rem;
+}
+
+.body-section h1 {
+    font-family: serif;
+    color: #fff;
+}
+
+.slick-prev:before {
+    color: black;
+}
+
+.slick-next:before {
+    color: black;
+}
+
+.body-section p {
+    color: #474e5d;
 }
