@@ -14,4 +14,11 @@ $(document).ready(function() {
 
 
 
+    $(".menu > li").hover(function(){
+        $(this).children(".sub-menu").fadeToggle(100);
+    })
+    
+
+
+
 })
