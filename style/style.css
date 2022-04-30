@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myfont1;
+    src: url("../fonts/big_noodle_titling.ttf");
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -358,102 +363,114 @@ hr {
 }
 
 
-
-
-
-
 /*Contact form starts*/
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
-  
+}
 
 
 /*Contract form ends*/
 
 
-
 /*Footer start*/
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
-  
-  .footer {
+}
+
+.footer {
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
-    gap:50rem;
-  }
-  
-  .footer > * {
-    flex:  1 100%;
-  }
-  
-  .footer__addr {
+    gap: 50rem;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footer__addr {
     margin-right: 1.25em;
     margin-bottom: 2em;
-  }
-  
-  .footer__logo {
+}
+
+.footer__logo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-  }
-  
-  .footer__addr h2 {
+}
+
+.footer__addr h2 {
     margin-top: 1.3em;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     font-size: 15px;
     font-weight: 400;
-  }
-  
-  .nav__title {
+}
+
+.nav__title {
     font-weight: 400;
     font-size: 15px;
-  }
-  
-  .footer address {
+}
+
+.footer address {
     font-style: normal;
     color: #999;
-  }
-  
-  .footer__btn {
+}
+
+.footer__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,164 +483,177 @@ input[type=text], select, textarea {
     margin: 0.6em 0;
     font-size: 1rem;
     padding: 0 1.3em;
-    margin-top:2rem;
-  }
-  
-  .footer ul {
+    margin-top: 2rem;
+}
+
+.footer ul {
     list-style: none;
     padding-left: 0;
-  }
-  
-  .footer li {
+}
+
+.footer li {
     line-height: 2em;
-  }
-  
-  .footer a {
+}
+
+.footer a {
     text-decoration: none;
-  }
-  
-  .footer__nav {
+}
+
+.footer__nav {
     display: flex;
-      flex-flow: row wrap;
-  }
-  
-  .footer__nav > * {
+    flex-flow: row wrap;
+}
+
+.footer__nav>* {
     flex: 1 50%;
     margin-right: 1.25em;
-  }
-  
-  .nav__ul a {
+}
+
+.nav__ul a {
     color: #999;
-  }
-  
-  .nav__ul--extra {
+}
+
+.nav__ul--extra {
     column-count: 2;
     column-gap: 1.25em;
-  }
-  
-  .legal {
+}
+
+.legal {
     display: flex;
     flex-wrap: wrap;
     color: #999;
-  }
-    
-  .legal__links {
+}
+
+.legal__links {
     display: flex;
     align-items: center;
-  }
-  
-  .heart {
+}
+
+.heart {
     color: #2f2f2f;
-  }
-  
-  @media screen and (min-width: 24.375em) {
+}
+
+@media screen and (min-width: 24.375em) {
     .legal .legal__links {
-      margin-left: auto;
+        margin-left: auto;
     }
-  }
-  
-  @media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-      flex: 1;
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav>* {
+        flex: 1;
     }
-    
     .nav__item--extra {
-      flex-grow: 2;
+        flex-grow: 2;
     }
-    
     .footer__addr {
-      flex: 1 0px;
+        flex: 1 0px;
     }
-    
     .footer__nav {
-      flex: 2 0px;
+        flex: 2 0px;
     }
-  }
+}
+
+
 /*footer end*/
 
-
-
-#p1{
-
-    text-align:center;
-    margin-top:5rem;
+#p1 {
+    text-align: center;
+    margin-top: 5rem;
 }
 
-
-
-
-.sub-menu{
-    position:absolute;
+.sub-menu {
+    position: absolute;
     background-color: #4c9e9e;
-    top:2rem;
-    list-style-type:none;
-    padding-bottom:1.10rem;
-    width:7rem;    
-    padding:0;
-    text-align:center;
-    font-size:0.82rem;
-    right:1px;
-    left:1px;
-
+    top: 2rem;
+    list-style-type: none;
+    padding-bottom: 1.10rem;
+    width: 7rem;
+    padding: 0;
+    text-align: center;
+    font-size: 0.82rem;
+    right: 1px;
+    left: 1px;
 }
 
-
-.sub-menu > li{
-    padding-top:1rem;
-    padding-bottom:1rem;
-    padding-left:0;
-    border-radius:80px;
-
-
+.sub-menu>li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    border-radius: 80px;
 }
 
-
-.sub-menu > li:hover {
-    background-color:#00a9ff;
-    cursor:pointer;
+.sub-menu>li:hover {
+    background-color: #00a9ff;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-.working-hours{
-
-
-    height:3rem;
-    background-color:chocolate;
-    text-align:center;
-    padding-top:1rem;
-
+.working-hours {
+    height: 3rem;
+    background-color: chocolate;
+    text-align: center;
+    padding-top: 1rem;
 }
 
-
-
-.footer_addr > h1{
-
+.footer_addr>h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-
-
-
-
-
-.stars{
-
-    margin-top:7rem;
-    margin-left:2rem;
-
+.stars {
+    margin-top: 7rem;
+    margin-left: 2rem;
 }
 
+.body-section div {
+    font-size: 1.25rem;
+    text-align: center;
+}
 
+.header2 {
+    background-image: url("../images/image2.jpg");
+    padding-top: 10rem;
+    border-radius: 200px;
+}
 
+#h1-text {
+    font: family myfont 1px;
+    margin: auto;
+}
 
-.body-section div{
+img {
+    margin-top: 3rem;
+    max-width: 50px;
+    max-height: 50px;
+}
 
-    font-size:1.25rem;
-    text-align:center;
+.main-container-2 {
+    height: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.main-container-child {
+    grid-row: 1/5;
+    grid-column: 2/4;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.main-container-child h1 {
+    padding-top: 2rem;
+    color: chocolate;
+    font-weight: bold;
+}
+
+.main-container-child p {
+    padding-top: 2rem;
+    color: #686868;
+    font-weight: bold;
+}
+
+.main-container-child hr {
+    border: 1px solid chocolate;
+    margin-top: 2rem;
+    height: 2rem;
 }
