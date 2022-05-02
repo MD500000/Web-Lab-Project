@@ -874,3 +874,44 @@ ol li {
     padding-right: 1rem;
     font-size: 1.2rem;
 }
+
+/* additions */
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    padding: 40px;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .form {
+    background: black;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  
+    float: right;
+    padding: 40px;
+    margin-right: 20px; /*what ever you want*/
+  }
+  
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
