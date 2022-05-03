@@ -899,7 +899,7 @@ ol li {
   
     float: right;
     padding: 40px;
-    margin-right: 20px; /*what ever you want*/
+    margin-right: 20px;
   }
   
   .top-row:after {
@@ -914,4 +914,11 @@ ol li {
   }
   .top-row > div:last-child {
     margin: 0;
+  }
+  .field-wrap {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  input[type=password]{
+    border: 1px solid #ccc;
   }
