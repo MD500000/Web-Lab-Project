@@ -605,7 +605,7 @@ input[type=submit]:hover {
 }
 
 .body-section div {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-align: center;
 }
 
@@ -695,6 +695,8 @@ ol li {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 5rem;
+    background-image: url("../images/dog2.jpg");
+    background-size: cover;
 }
 
 .main-container-vet div {
@@ -704,34 +706,40 @@ ol li {
 
 .main-container-vet-1 {
     grid-row: 1/2;
-    grid-column: 1/3;
+    grid-column: 1/5;
     background-color: #00ffff;
     border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 #image-vet {
     border-radius: 50px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .main-container-vet-2 {
     grid-row: 2/3;
-    grid-column: 3/5;
+    grid-column: 1/5;
     background-color: #f08080;
     display: grid;
     border-radius: 50px;
     grid-template-columns: 1fr 1fr;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .main-container-vet-3 {
     grid-row: 3/4;
-    grid-column: 1/3;
+    grid-column: 1/5;
     background-color: #ba55d3;
     display: grid;
     border-radius: 50px;
     grid-template-columns: 1fr 1fr;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .p1 {
@@ -745,6 +753,8 @@ ol li {
 .p1 p {
     padding-top: 10rem;
     font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .main-container-vet-3 p {
@@ -875,50 +885,79 @@ ol li {
     font-size: 1.2rem;
 }
 
+
 /* additions */
 
 .flex-container {
     display: flex;
     background-color: white;
     padding: 40px;
-  }
-  
-  .flex-container > div {
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/ULPS-Cat-grooming-AdobeStock_313891439-1080x675.jpg");
+    background-size: cover;
+}
+
+.flex-container>div {
     background-color: #f1f1f1;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-  }
-  .form {
+}
+
+.form {
     background: black;
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
     border-radius: 4px;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-  
     float: right;
     padding: 40px;
     margin-right: 20px;
-  }
-  
-  .top-row:after {
+}
+
+.top-row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .top-row > div {
+}
+
+.top-row>div {
     float: left;
     width: 48%;
     margin-right: 4%;
-  }
-  .top-row > div:last-child {
+}
+
+.top-row>div:last-child {
     margin: 0;
-  }
-  .field-wrap {
+}
+
+.field-wrap {
     position: relative;
     margin-bottom: 10px;
-  }
-  input[type=password]{
+}
+
+input[type=password] {
     border: 1px solid #ccc;
-  }
+}
+
+.tab-content>.signup>h2 {
+    margin-top: 1rem;
+}
+
+
+/*Care page adjustments*/
+
+.p2 {
+    color: #686868;
+    font-family: myfont1;
+    text-align: center;
+}
+
+.p2 p {
+    padding-top: 10rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
