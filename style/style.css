@@ -1010,31 +1010,86 @@ input[type=password] {
 
 
 
-  /*services container*/
+  /*services container / multi selection */
 
-
-
-
-  .flex-container-services{
-
-
-    display:flex;
-    height:3rem;
-    margin:1rem;
-    align-items:center;
-    justify-content:center;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service .option_item {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service .option_item .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .option_item .option_inner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 3px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+  }
+  
+  .option_item .option_inner .icon {
+    margin-bottom: 1px;
+  }
+  
+  .option_item .checkbox:checked ~ .option_inner {
+    border-color: green;
+    border-width: 2px;
+    
+  }
+  
+  .option_item .option_inner .tickmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid;
+    border-color: transparent;
+    display: none;
+  }
+  
+  .option_item .option_inner .tickmark:before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 15px;
+    height: 5px;
+    border: 2px solid;
+    border-color: transparent transparent green green;
+    transform: rotate(-45deg);
+  }
+  
+  .option_item .checkbox:checked ~ .option_inner .tickmark {
+    display: block;
   }
 
-
-
-  .flex-container-services-item{
-
-
-    flex-basis:10rem;
-    margin-right:1rem;
-    cursor:pointer;
-  }
 
 
 
