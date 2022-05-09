@@ -14,10 +14,16 @@
     src: url("../fonts/ahmet-altun---festivolettersno-19.woff.ttf");
 }
 
+@font-face {
+    font-family: myfont3;
+    src: url("../fonts/Louis\ George\ Cafe.ttf");
+}
+
+
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background-color: #EAEBD3;
+    font-family: myfont3;
+    background-color: #F7F8ED;
 }
 
 a {
@@ -32,7 +38,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 18px;
     background-color: teal;
     color: #fff;
 }
@@ -245,7 +251,7 @@ button:hover {
 
 hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 
@@ -591,6 +597,7 @@ input[type=submit]:hover {
 .working-hours {
     height: 3rem;
     background-color: chocolate;
+    font-weight:bold;
     text-align: center;
     padding-top: 1rem;
 }
@@ -623,7 +630,8 @@ input[type=submit]:hover {
 
 #h1-text {
     font: family myfont 1px;
-    margin: auto;
+    margin:auto;
+    padding-bottom:0;
 }
 
 #h1-text-header {
@@ -678,7 +686,7 @@ input[type=submit]:hover {
 }
 
 ol {
-    padding-top: 1rem;
+    padding-top:0.5rem;
 }
 
 ol li {
@@ -882,7 +890,7 @@ ol li {
     justify-content: center;
     padding-top: 2rem;
     padding-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 
@@ -891,7 +899,7 @@ ol li {
 .flex-container {
     display: flex;
     background-color: white;
-    padding: 40px;
+    padding: 50px;
     align-items: center;
     justify-content: center;
     background-image: url("../images/ULPS-Cat-grooming-AdobeStock_313891439-1080x675.jpg");
@@ -1092,4 +1100,16 @@ input[type=password] {
 
 
 
+#h2-signup{
+    margin-bottom:2rem;
+    margin-top:0.5rem;
+}
+
+
+
+.main-container-child > p {
+
+    margin-left:2rem;
+    margin-right:2rem;
+}
 
