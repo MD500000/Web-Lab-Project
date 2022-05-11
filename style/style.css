@@ -19,8 +19,6 @@
     src: url("../fonts/Louis\ George\ Cafe.ttf");
 }
 
-
-
 body {
     font-family: myfont3;
     background-color: #F7F8ED;
@@ -302,10 +300,6 @@ hr {
     margin-bottom: 12rem;
     margin-left: 3rem;
     color: #4c9e9e;
-}
-
-.body-section div {
-    margin-left: 1rem;
 }
 
 .body-section h1 {
@@ -597,7 +591,7 @@ input[type=submit]:hover {
 .working-hours {
     height: 3rem;
     background-color: chocolate;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     padding-top: 1rem;
 }
@@ -608,7 +602,6 @@ input[type=submit]:hover {
 
 .stars {
     margin-top: 7rem;
-    margin-left: 2rem;
 }
 
 .body-section div {
@@ -630,8 +623,8 @@ input[type=submit]:hover {
 
 #h1-text {
     font: family myfont 1px;
-    margin:auto;
-    padding-bottom:0;
+    margin: auto;
+    padding-bottom: 0;
 }
 
 #h1-text-header {
@@ -686,7 +679,7 @@ input[type=submit]:hover {
 }
 
 ol {
-    padding-top:0.5rem;
+    padding-top: 0.5rem;
 }
 
 ol li {
@@ -970,6 +963,7 @@ input[type=password] {
     margin-left: 2rem;
 }
 
+
 /* request */
 
 .section {
@@ -979,77 +973,75 @@ input[type=password] {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
-  }
-  .section:before {
+}
+
+.section:before {
     content: "";
     align-self: stretch;
     border: 1px solid lightgrey;
-  }
-  @media (min-width: 700px) {
+}
+
+@media (min-width: 700px) {
     .section {
-      flex-direction: row;
-      align-items: center;
+        flex-direction: row;
+        align-items: center;
     }
-  }
-  
-  .section__item {
+}
+
+.section__item {
     flex: 1;
     min-width: 0;
     overflow-wrap: break-word;
-    margin-right:5rem;
-  }
-  
-  .section__item--start {
+    margin-right: 5rem;
+}
+
+.section__item--start {
     order: -1;
-  }
-  
-  p {
+}
+
+p {
     color: #222;
-  }
-  
-  *,
-  *:before,
-  *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
+}
 
 
-
-
-
-
-  /*services container / multi selection */
+/*services container / multi selection */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-  }
-  
-  .service {
+}
+
+.service {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .service .option_item {
+}
+
+.service .option_item {
     display: block;
     position: relative;
     width: 80px;
     height: 80px;
     margin-right: 1.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .service .option_item .checkbox {
+}
+
+.service .option_item .checkbox {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     opacity: 0;
-  }
-  
-  .option_item .option_inner {
+}
+
+.option_item .option_inner {
     width: 100%;
     height: 100%;
     background: #fff;
@@ -1061,28 +1053,27 @@ input[type=password] {
     display: block;
     border: 5px solid transparent;
     position: relative;
-  }
-  
-  .option_item .option_inner .icon {
+}
+
+.option_item .option_inner .icon {
     margin-bottom: 1px;
-  }
-  
-  .option_item .checkbox:checked ~ .option_inner {
+}
+
+.option_item .checkbox:checked~.option_inner {
     border-color: green;
     border-width: 2px;
-    
-  }
-  
-  .option_item .option_inner .tickmark {
+}
+
+.option_item .option_inner .tickmark {
     position: absolute;
     top: 0;
     left: 0;
     border: 20px solid;
     border-color: transparent;
     display: none;
-  }
-  
-  .option_item .option_inner .tickmark:before {
+}
+
+.option_item .option_inner .tickmark:before {
     content: "";
     position: absolute;
     top: -18px;
@@ -1092,24 +1083,28 @@ input[type=password] {
     border: 2px solid;
     border-color: transparent transparent green green;
     transform: rotate(-45deg);
-  }
-  
-  .option_item .checkbox:checked ~ .option_inner .tickmark {
+}
+
+.option_item .checkbox:checked~.option_inner .tickmark {
     display: block;
-  }
-
-
-
-#h2-signup{
-    margin-bottom:2rem;
-    margin-top:0.5rem;
 }
 
-
-
-.main-container-child > p {
-
-    margin-left:2rem;
-    margin-right:2rem;
+#h2-signup {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
 }
 
+.main-container-child>p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.text-container {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0.5rem;
+}
