@@ -124,7 +124,7 @@
                   
                 </div>
               </div>
-            <button type="submit" class="button button-block">Start Your Service Request</button>
+            <button type="submit" class="button-rq">Start Your Service Request</button>
   
           </div>
           
@@ -136,7 +136,7 @@
         <div class="section__item section__item--end">
           <font size="6">Already a Customer?</font>
   
-          <button type="submit" class="button button-block">Log In and Schedule Service</button>
+          <button type="submit" class="button-rq">Log In and Schedule Service</button>
         </div>
       </section>
   

@@ -57,15 +57,15 @@ li {
     text-align: center;
 }
 
-.menu li:hover {
-    background-color: #4c9e9e;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
+    .menu li:hover {
+        background-color: #4c9e9e;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
 
-.menu li {
-    padding: 5px 14px;
-}
+    .menu li {
+        padding: 5px 14px;
+    }
 
 .services {
     position: relative;
@@ -80,13 +80,13 @@ li {
     font-size: 30px;
 }
 
-.header>h1 {
-    color: #28E994;
-}
+    .header > h1 {
+        color: #28E994;
+    }
 
-.header>p {
-    color: #28E994;
-}
+    .header > p {
+        color: #28E994;
+    }
 
 h1 {
     margin-bottom: 2rem;
@@ -114,10 +114,10 @@ h1 {
     height: 50%;
 }
 
-#slider img {
-    width: 100%;
-    height: auto;
-}
+    #slider img {
+        width: 100%;
+        height: auto;
+    }
 
 .slick-prev:before,
 .slick-next:before {
@@ -160,13 +160,13 @@ input[type=password] {
 }
 
 
-/* Add a background color when the inputs get focus */
+    /* Add a background color when the inputs get focus */
 
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
 
 
 /* Set a style for all buttons */
@@ -182,9 +182,9 @@ button {
     opacity: 0.9;
 }
 
-button:hover {
-    opacity: 1;
-}
+    button:hover {
+        opacity: 1;
+    }
 
 
 /* Extra styles for the cancel button */
@@ -264,11 +264,11 @@ hr {
     color: #f1f1f1;
 }
 
-.close:hover,
-.close:focus {
-    color: #f44336;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
 
 
 /*Forum Registration end*/
@@ -284,15 +284,15 @@ hr {
     border-radius: 15px;
 }
 
-.body-section img {
-    margin-top: 5rem;
-    margin-left: 1rem;
-    border-radius: 15px;
-    object-fit: cover;
-    height: 205px;
-    width: 240px;
-    height: 240px;
-}
+    .body-section img {
+        margin-top: 5rem;
+        margin-left: 1rem;
+        border-radius: 15px;
+        object-fit: cover;
+        height: 205px;
+        width: 240px;
+        height: 240px;
+    }
 
 #header-groomers {
     text-align: center;
@@ -334,13 +334,13 @@ hr {
     height: 10rem;
 }
 
-.dog-services div {
-    border: 1px solid black;
-    background-color: #ECE9E9;
-    text-align: center;
-    padding-top: 1.5rem;
-    cursor: pointer;
-}
+    .dog-services div {
+        border: 1px solid black;
+        background-color: #ECE9E9;
+        text-align: center;
+        padding-top: 1.5rem;
+        cursor: pointer;
+    }
 
 .active {
     border-bottom: 0;
@@ -385,7 +385,7 @@ textarea {
     /* Add a top margin */
     margin-bottom: 16px;
     /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
@@ -401,11 +401,11 @@ input[type=submit] {
 }
 
 
-/* When moving the mouse over the submit button, add a darker green color */
+    /* When moving the mouse over the submit button, add a darker green color */
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
 
 
 /* Add a background color and some padding around the form */
@@ -438,9 +438,9 @@ input[type=submit]:hover {
     gap: 50rem;
 }
 
-.footer>* {
-    flex: 1 100%;
-}
+    .footer > * {
+        flex: 1 100%;
+    }
 
 .footer__addr {
     margin-right: 1.25em;
@@ -504,10 +504,10 @@ input[type=submit]:hover {
     flex-flow: row wrap;
 }
 
-.footer__nav>* {
-    flex: 1 50%;
-    margin-right: 1.25em;
-}
+    .footer__nav > * {
+        flex: 1 50%;
+        margin-right: 1.25em;
+    }
 
 .nav__ul a {
     color: #999;
@@ -540,15 +540,18 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width: 40.375em) {
-    .footer__nav>* {
+    .footer__nav > * {
         flex: 1;
     }
+
     .nav__item--extra {
         flex-grow: 2;
     }
+
     .footer__addr {
         flex: 1 0px;
     }
+
     .footer__nav {
         flex: 2 0px;
     }
@@ -576,17 +579,17 @@ input[type=submit]:hover {
     left: 1px;
 }
 
-.sub-menu>li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0;
-    border-radius: 80px;
-}
+    .sub-menu > li {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        border-radius: 80px;
+    }
 
-.sub-menu>li:hover {
-    background-color: #00a9ff;
-    cursor: pointer;
-}
+        .sub-menu > li:hover {
+            background-color: #00a9ff;
+            cursor: pointer;
+        }
 
 .working-hours {
     height: 3rem;
@@ -596,7 +599,7 @@ input[type=submit]:hover {
     padding-top: 1rem;
 }
 
-.footer_addr>h1 {
+.footer_addr > h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -656,39 +659,39 @@ input[type=submit]:hover {
     margin-bottom: 1rem;
 }
 
-.main-container-child h1 {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    color: chocolate;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 2rem;
-}
+    .main-container-child h1 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        color: chocolate;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 2rem;
+    }
 
-.main-container-child p {
-    padding-top: 1rem;
-    color: #686868;
-    font-weight: bold;
-}
+    .main-container-child p {
+        padding-top: 1rem;
+        color: #686868;
+        font-weight: bold;
+    }
 
-.main-container-child hr {
-    border: 1px solid chocolate;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    .main-container-child hr {
+        border: 1px solid chocolate;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
 ol {
     padding-top: 0.5rem;
 }
 
-ol li {
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    color: #686868;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    ol li {
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        color: #686868;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
 .main-container-vet {
     height: 120rem;
@@ -700,10 +703,10 @@ ol li {
     background-size: cover;
 }
 
-.main-container-vet div {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+    .main-container-vet div {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 
 .main-container-vet-1 {
     grid-row: 1/2;
@@ -751,12 +754,12 @@ ol li {
     text-align: center;
 }
 
-.p1 p {
-    padding-top: 10rem;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
+    .p1 p {
+        padding-top: 10rem;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 
 .main-container-vet-3 p {
     margin-left: 0.25rem;
@@ -782,30 +785,78 @@ ol li {
     font-size: 1rem;
 }
 
-.button span {
-    cursor: pointer;
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+
+/*Button end*/
+
+
+/*Button-request-start*/
+
+.button-rq {
     display: inline-block;
-    position: relative;
-    transition: 0.5s;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 3rem;
+    font-size: 1rem;
 }
 
-.button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
+    .button-rq span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
 
-.button:hover span {
-    padding-right: 25px;
-}
+        .button-rq span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
 
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
+    .button-rq:hover span {
+        padding-right: 25px;
+    }
+
+        .button-rq:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
 
 /*Button end*/
@@ -899,12 +950,12 @@ ol li {
     background-size: cover;
 }
 
-.flex-container>div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-}
+    .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
 
 .form {
     background: black;
@@ -924,15 +975,15 @@ ol li {
     clear: both;
 }
 
-.top-row>div {
+.top-row > div {
     float: left;
     width: 48%;
     margin-right: 4%;
 }
 
-.top-row>div:last-child {
-    margin: 0;
-}
+    .top-row > div:last-child {
+        margin: 0;
+    }
 
 .field-wrap {
     position: relative;
@@ -943,7 +994,7 @@ input[type=password] {
     border: 1px solid #ccc;
 }
 
-.tab-content>.signup>h2 {
+.tab-content > .signup > h2 {
     margin-top: 1rem;
 }
 
@@ -956,12 +1007,12 @@ input[type=password] {
     text-align: center;
 }
 
-.p2 p {
-    padding-top: 10rem;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
+    .p2 p {
+        padding-top: 10rem;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 
 
 /* request */
@@ -975,11 +1026,11 @@ input[type=password] {
     padding: 1rem;
 }
 
-.section:before {
-    content: "";
-    align-self: stretch;
-    border: 1px solid lightgrey;
-}
+    .section:before {
+        content: "";
+        align-self: stretch;
+        border: 1px solid lightgrey;
+    }
 
 @media (min-width: 700px) {
     .section {
@@ -1024,22 +1075,22 @@ p {
     flex-wrap: wrap;
 }
 
-.service .option_item {
-    display: block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin-right: 1.5rem;
-    margin-bottom: 1rem;
-}
+    .service .option_item {
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+    }
 
-.service .option_item .checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
-}
+        .service .option_item .checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
 
 .option_item .option_inner {
     width: 100%;
@@ -1055,11 +1106,11 @@ p {
     position: relative;
 }
 
-.option_item .option_inner .icon {
-    margin-bottom: 1px;
-}
+    .option_item .option_inner .icon {
+        margin-bottom: 1px;
+    }
 
-.option_item .checkbox:checked~.option_inner {
+.option_item .checkbox:checked ~ .option_inner {
     border-color: green;
     border-width: 2px;
 }
@@ -1073,19 +1124,19 @@ p {
     display: none;
 }
 
-.option_item .option_inner .tickmark:before {
-    content: "";
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    width: 15px;
-    height: 5px;
-    border: 2px solid;
-    border-color: transparent transparent green green;
-    transform: rotate(-45deg);
-}
+    .option_item .option_inner .tickmark:before {
+        content: "";
+        position: absolute;
+        top: -18px;
+        left: -18px;
+        width: 15px;
+        height: 5px;
+        border: 2px solid;
+        border-color: transparent transparent green green;
+        transform: rotate(-45deg);
+    }
 
-.option_item .checkbox:checked~.option_inner .tickmark {
+.option_item .checkbox:checked ~ .option_inner .tickmark {
     display: block;
 }
 
@@ -1094,7 +1145,7 @@ p {
     margin-top: 0.5rem;
 }
 
-.main-container-child>p {
+.main-container-child > p {
     margin-left: 2rem;
     margin-right: 2rem;
 }

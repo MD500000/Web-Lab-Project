@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $("#slider").slick({
 
@@ -14,11 +14,17 @@ $(document).ready(function() {
 
 
 
-    $(".menu > li").hover(function(){
+    $(".menu > li").hover(function () {
         $(this).children(".sub-menu").fadeToggle(100);
     })
-    
 
+
+
+
+    $(".button").click(function () {
+
+        window.open("service request.aspx")
+    });
 
 
 })
