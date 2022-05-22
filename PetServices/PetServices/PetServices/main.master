@@ -40,62 +40,28 @@
         <!--Navbar start-->
     </div>
 
-    <nav class="navbar">
-        <div class="logo">Pets United
+    <div class="navbar">
+        <p>Pets United </p>
 
-
+        <a href="index.aspx">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Services
+            </button>
+            <div class="dropdown-content">
+                <a href="care.aspx">Vet Care</a>
+                <a href="services.aspx">Grooming</a>
+            </div>
         </div>
+        <a href="story.aspx">Our Story</a>
+        <a href="#">About Us</a>
 
-        <ul class="nav-links">
-            <div class="menu">
-                <li class="services"><a href="index.aspx">Home</a>
-
-
-
-
-                    <ul class="sub-menu" hidden>
-                        <li><a href="index.aspx ">About us </a></li>
-                        <li><a href="story.aspx">Our Story</a></li>
-                    </ul>
-                    
-
-
-                </li>
-
-                <li class="services">
-                    <a href="services.aspx">Services</a>
-
-
-
-                    <ul class="sub-menu" hidden>
-                        <li><a href="care.aspx">Vet Care </a></li>
-                        <li><a href="services.aspx">Grooming</a></li>
-                    </ul>
-
-
-
-
-                    <li class="services"><a href="signup.aspx">Login/Register
-
-
-
-                  <ul class="sub-menu" hidden>
-                    <li><a href="login.aspx">Login </a></li>
-                    <li><a href="signup.aspx">Register</a></li>
-        </ul>
-
-        </a>
-
-
-
-        </li>
-        <li><a href="contact.aspx">Contact</a></li>
+        <div class="topnav-right">
+            <a href="login.aspx">Login</a>
+            <a href="signup.aspx">Register</a>
+            <button type="submit" class="button-rq2">Request Service</button>
         </div>
-        </div>
-        </ul>
-    </nav>
-
-
+    </div>
     <!--Navbar end-->
 
     <div>
@@ -151,7 +117,7 @@
                 </div>
     </footer>
     <!-- Footer end -->
-
-    </form>
+</form>
+    
 </body>
 </html>
