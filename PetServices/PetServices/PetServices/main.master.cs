@@ -11,4 +11,9 @@ public partial class main : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void RequestServiceButton_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("service request.aspx");
+    }
 }

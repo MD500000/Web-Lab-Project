@@ -40,7 +40,7 @@ public partial class Default2 : System.Web.UI.Page
                     
                 });
             ;
-            Response.Redirect("signup.aspx");
+            Response.Redirect("login.aspx");
         
         }
     }

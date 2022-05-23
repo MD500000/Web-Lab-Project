@@ -54,12 +54,11 @@
             </div>
         </div>
         <a href="story.aspx">Our Story</a>
-        <a href="#">About Us</a>
 
         <div class="topnav-right">
             <a href="login.aspx">Login</a>
             <a href="signup.aspx">Register</a>
-            <button type="submit" class="button-rq2">Request Service</button>
+            <asp:Button ID="RequestServiceButton" runat="server" Text="Request Service" OnClick="RequestServiceButton_Click" CssClass="button-rq2"/>
         </div>
     </div>
     <!--Navbar end-->

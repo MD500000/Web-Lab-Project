@@ -16,14 +16,14 @@ $(document).ready(function () {
 
     $(".menu > li").hover(function () {
         $(this).children(".sub-menu").fadeToggle(100);
-    })
+    });
 
 
 
 
     $(".button").click(function () {
 
-        window.open("service request.aspx")
+        window.open("service request.aspx");
     });
 
 
