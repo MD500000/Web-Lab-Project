@@ -49,6 +49,7 @@ li {
         padding: 22px;
         text-decoration: none;
     }
+
     .navbar a {
         float: left;
         font-size: 20px;
@@ -57,9 +58,11 @@ li {
         padding: 28px;
         text-decoration: none;
     }
+
 .topnav-right {
     float: right;
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -745,7 +748,7 @@ ol {
     grid-column: 1/5;
     background-color: #00ffff;
     border-radius: 50px;
-    display:flex;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -760,7 +763,7 @@ ol {
     grid-row: 2/3;
     grid-column: 1/5;
     background-color: #f08080;
-    display:flex;
+    display: flex;
     border-radius: 50px;
     grid-template-columns: 1fr 1fr;
     margin-right: 2rem;
@@ -771,7 +774,7 @@ ol {
     grid-row: 3/4;
     grid-column: 1/5;
     background-color: #ba55d3;
-    display:flex;
+    display: flex;
     border-radius: 50px;
     grid-template-columns: 1fr 1fr;
     margin-right: 2rem;
@@ -882,30 +885,30 @@ ol {
     margin-top: 13px;
 }
 
-    .button-rq span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
+.button-rq span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+    .button-rq span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
         transition: 0.5s;
     }
 
-        .button-rq span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+.button-rq:hover span {
+    padding-right: 25px;
+}
 
-    .button-rq:hover span {
-        padding-right: 25px;
+    .button-rq:hover span:after {
+        opacity: 1;
+        right: 0;
     }
-
-        .button-rq:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
 
 
 /*Button end*/
@@ -926,7 +929,7 @@ ol {
     display: grid;
     grid-template-columns: 3fr 4fr;
     grid-template-rows: 1fr;
-    box-shadow:25px 25px green;
+    box-shadow: 25px 25px green;
 }
 
 #image-story {
@@ -985,7 +988,7 @@ ol {
     justify-content: center;
     padding-top: 1rem;
     padding-right: 1rem;
-    padding-bottom:1rem;
+    padding-bottom: 1rem;
     font-size: 1.4rem;
 }
 
@@ -1210,4 +1213,42 @@ p {
     justify-content: center;
     margin: auto;
     padding-left: 0.5rem;
+}
+
+/*blocks*/
+
+
+
+.block-left {
+    background-color: #F2F2F4;
+    padding: 50px;
+}
+
+.block-right {
+    background-color: white;
+    padding: 50px;
+}
+
+.block-text {
+    padding: 3rem;
+}
+
+
+.block-left img {
+    margin-right: 1em;
+    float: left;
+}
+
+.block-right img {
+    order: 1;
+    margin-left: 1em;
+    float: right;
+}
+
+
+.block-left::after,
+.block-right::after {
+    content: "";
+    display: block;
+    clear: both;
 }
