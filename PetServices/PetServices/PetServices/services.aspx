@@ -4,79 +4,99 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <section style="background-color:#F2F2F4">
+    <div class="header2-services">
 
 
-  <img src="images/image2.jpg" alt="Nature" class="responsive" width="600" height="400">
+
+        <h1 id="h1-text">Grooming</h1>
+        <img src="images/3515024.png" class="img-icon">
 
 
-    <div class="pricing">
-        
-        
-        <div class="columns">
-            <ul class="price">
-                <li class="top">
-                    <figure class="image">
-            <img src="images/grooming-lab-bath-1024x682.jpg" alt="image">
-            <figcaption>
-              <div class="caption">
-                
-                </div>
-            </figcaption>
-        </figure></li>
-                <li class="grey">Bath Bundle / $ 15</li>
-                <li>Washing and Drying of Fluff</li>
-                <li>Special Doggy Bath</li>
-                <li>De-Shedding</li>
-                <li>Special Cologne</li>
-                <li style="background-color: #ED6436"><a href="#" class="button2" >Sign Up</a></li>
-            </ul>
+
+
+    </div>
+
+
+
+    <div class="main-container-2">
+
+
+
+        <div class="main-container-child">
+
+
+
+            <h1 id="h1-text-header">We treat your pets like our own </h1>
+
+            <p>Your pets deserve the best possible care and attention, which is why our team puts prioritizies comfort, care, and pricing, for an optimal experience.</p>
+
+
+            <hr>
+
+
+            <h1 id="h1-text">Bath Bundle -- 15$</h1>
+
+
+            <ol>
+
+                <li>- Washing and drying of fluff</li>
+
+                <li>- Special doggy Bath</li>
+
+                <li>- De-Shedding</li>
+
+                <li>- Special cologne</li>
+
+
+            </ol>
+
+
+
+            <h1 id="h1-text">Spa Bundle -- 25$</h1>
+
+
+            <ol>
+
+                <li>- Nail trimmings</li>
+
+                <li>- Ear cleaning</li>
+
+                <li>- Breed-specific or customized haircut</li>
+
+                <li>- Hydrotherapy bath with blueberry-vanilla facial</li>
+
+
+            </ol>
+
+
+
+
+            <h1 id="h1-text">All In Pup Package -- 35$</h1>
+
+
+            <ol>
+
+                <li>- Washing and drying of fluff</li>
+
+                <li>- Special doggy Bath</li>
+
+                <li>- Ear cleaning</li>
+
+                <li>- Nail trimmings</li>
+
+                <li>- Hydrotherapy bath with blueberry-vanilla facial</li>
+
+
+            </ol>
+
+
+
+            <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+
         </div>
 
-        <div class="columns">
-            <ul class="price">
-                <li class="top">
-                    <figure class="image">
-            <img src="images/grooming-lab-bath-1024x682.jpg" alt="image">
-            <figcaption>
-              <div class="caption">
-                
-                </div>
-            </figcaption>
-        </figure>
-                <li class="grey">Spa Bundle / $ 25</li>
-                <li>Nail Trimmings</li>
-                <li>Ear Cleaning</li>
-                <li>Customized Haircut</li>
-                <li>Hydrotherapy Hath</li>
-                <li style="background-color: #04AA6D"><a href="#" class="button2" >Sign Up</a></li>
-            </ul>
-        </div>
-
-        <div class="columns">
-            <ul class="price">
-                <li class="top">
-                    <figure class="image">
-            <img src="images/grooming-lab-bath-1024x682.jpg" alt="image">
-            <figcaption>
-              <div class="caption">
-                
-                </div>
-            </figcaption>
-        </figure>
-                <li class="grey">All In Pup Package / $ 35</li>
-                <li>Washing and Drying of Fluff</li>
-                <li>Special Doggy Bath</li>
-                <li>Ear Cleaning</li>
-                <li>Nail Trimmings</li>
-                <li>Hydrotherapy Bath</li>
-                <li style="background-color: #ED6436"><a href="#" class="button2">Sign Up</a></li>
-            </ul>
-        </div>
         
     </div>
-    
-</section>
 
 </asp:Content>
 
