@@ -20,7 +20,7 @@
 
               <div class="service">
                 <label class="option_item">
-                  <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" ID="CB1" value="CB1" runat="server">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/pet-sitting-icon.png" alt="" style="height: 18px;">
@@ -29,7 +29,7 @@
                 </label>
 
                 <label class="option_item">
-                  <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" ID="CB2" value="CB2">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/dog-walking-icon.png" alt="" style="height: 18px;">
@@ -38,16 +38,15 @@
                 </label>
 
                 <label class="option_item">
-                  <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" ID="CB3" value="CB3">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/overnight-pet-care-icon.png" alt="" style="height: 18px;">
                      <h5>Overnight Care</h5>
                   </div>
                 </label>
-
                 <label class="option_item">
-                  <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" ID="CB4" value="CB4">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/pet-transport-icon.png" alt="" style="height: 18px;">
@@ -63,59 +62,59 @@
             
             <div class="top-row">
               <div class="field-wrap">
-                <input type="text" placeholder="Your Name" required>
+                  <asp:TextBox ID="NameBox" runat="server" placeholder="Your Name"></asp:TextBox>
               </div>
           
               <div class="field-wrap">
-                <input type="text" placeholder="Pet Name(s)" required>
+                  <asp:TextBox ID="PetBox" runat="server" placeholder="Pet Name(s)"></asp:TextBox>
               </div>
             </div>
   
             <div class="top-row">
               <div class="field-wrap">
-                <input type="text" placeholder="Email Address" required>
+                  <asp:TextBox ID="MailBox" runat="server" placeholder="Email Address"></asp:TextBox>
               </div>
           
               <div class="field-wrap">
-                <input type="text" placeholder="Phone Number" required>
+                  <asp:TextBox ID="NumberBox" runat="server" placeholder="Phone Number"></asp:TextBox>
               </div>
             </div>
   
             <div class="top-row">
               <div class="field-wrap">
-                <select required>
-                    <option selected>Pet Type</option>
-                    <option value="1">Dog</option>
-                    <option value="2">Cat</option>
-                    <option value="3">Bird</option>
-                    <option value="4">Horse</option>
-                </select>
+                  <asp:DropDownList ID="PetTypeDropDown" runat="server">
+                     <asp:ListItem Value="">Select Pet Type  </asp:ListItem>
+                      <asp:ListItem>Dog</asp:ListItem>
+                      <asp:ListItem>Cat</asp:ListItem>
+                      <asp:ListItem>Bird</asp:ListItem>
+                      <asp:ListItem>Horse</asp:ListItem>
+                  </asp:DropDownList>
             </div>
   
             <div>
-              <select>
-                  <option selected>Select Location</option>
-                  <option value="1">Saida</option>
-                  <option value="2">Beirut</option>
-                  <option value="3">Zahle</option>
-                  <option value="4">Baalbek</option>
-                  <option value="5">Kab-Elias</option>
-              </select>
+               <asp:DropDownList ID="LocationDropDown" runat="server">
+                     <asp:ListItem Value="">Select Location </asp:ListItem>
+                      <asp:ListItem>Saida</asp:ListItem>
+                      <asp:ListItem>Beirut</asp:ListItem>
+                      <asp:ListItem>Zahle</asp:ListItem>
+                      <asp:ListItem>Baalbek</asp:ListItem>
+                      <asp:ListItem>Kab-Elias</asp:ListItem>
+                  </asp:DropDownList>
           </div>
   
             </div>
   
             <div>
                 <div class="field-wrap">
-                  <input type="text" placeholder="Zip Code">
+                    <asp:TextBox ID="ZipBox"  runat="server" placeholder="Zip Code"></asp:TextBox>
                 </div>
   
                 <div class="field-wrap">
-                  <input type="text" placeholder="Address Line 1">
+                    <asp:TextBox ID="Address1Box" runat="server" placeholder="Address Line 1"></asp:TextBox>
                 </div>
   
                 <div class="field-wrap">
-                  <input type="text" placeholder="Address Line 2">
+                    <asp:TextBox ID="Address2Box" runat="server" placeholder="Address Line 2"></asp:TextBox>
                 </div>
   
                 <div class="field-wrap">
@@ -124,8 +123,7 @@
                   
                 </div>
               </div>
-            <button type="submit" class="button-rq">Start Your Service Request</button>
-  
+                <asp:Button ID="ServiceRequestButton" runat="server" Text="Start Your Service Request" CssClass="button-rq" OnClick="ServiceRequestButton_Click"/>
           </div>
           
           
@@ -141,6 +139,7 @@
       </section>
   
       <!--Request Forum Section end-->
+
 
 </asp:Content>
 
