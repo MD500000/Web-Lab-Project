@@ -44,10 +44,9 @@ public static void InsertOrder(Order order)
     {
         connection.Open();
 
-        SqlCommand command = new SqlCommand("INSERT INTO [REQUEST_SERVICE] (ID, NAME,PET_NAME,EMAIL,PHONE_NUMBER,PET_TYPE,LOCATION,ZIP_CODE, ADDRESS_1, ADDRESS_2, REQUEST) VALUES (@ID, @NAME, @PET_NAME, @EMAIL, @PHONE_NUMBER, @PET_TYPE, @LOCATION, @ZIP_CODE, @ADDRESS_1, @ADDRESS_2, @REQUEST)", connection);
+        SqlCommand command = new SqlCommand("INSERT INTO [REQUEST_SERVICE] (NAME,PET_NAME,EMAIL,PHONE_NUMBER,PET_TYPE,LOCATION,ZIP_CODE, ADDRESS_1, ADDRESS_2, REQUEST) VALUES (@NAME, @PET_NAME, @EMAIL, @PHONE_NUMBER, @PET_TYPE, @LOCATION, @ZIP_CODE, @ADDRESS_1, @ADDRESS_2, @REQUEST)", connection);
         command.CommandType = CommandType.Text;
 
-            command.Parameters.Add(new SqlParameter("@ID", order.id));
             command.Parameters.Add(new SqlParameter("@NAME", order.name));
             command.Parameters.Add(new SqlParameter("@PET_NAME", order.pet_name));
             command.Parameters.Add(new SqlParameter("@EMAIL", order.email));

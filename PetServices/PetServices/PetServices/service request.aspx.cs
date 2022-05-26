@@ -21,7 +21,6 @@ public partial class Default2 : System.Web.UI.Page
         }
 
 
-        int id = 0;
         string name = NameBox.Text ;
         string pet_name = PetBox.Text;
         string email = MailBox.Text;
@@ -34,7 +33,6 @@ public partial class Default2 : System.Web.UI.Page
         string request="";
         int TypeIndex = PetTypeDropDown.SelectedIndex;
         int LocationIndex = LocationDropDown.SelectedIndex;
-
 
 
         switch (TypeIndex)
@@ -103,11 +101,39 @@ public partial class Default2 : System.Web.UI.Page
         }
 
 
+
+        bool PetSitting = (Request.Form["CB1"] == "on") ? true : false;
+        bool PetWalking = (Request.Form["CB2"] == "on") ? true : false;
+        bool PetOvernight = (Request.Form["CB3"] == "on") ? true : false;
+        bool PetTransport = (Request.Form["CB4"] == "on") ? true: false;
+
+
+        if(PetSitting == true)
+        {
+            request = "Pet Sitting";
+        }
+
+        if(PetWalking == true)
+        {
+            request = "Dog Walking";
+        }
+
+        if(PetOvernight == true)
+        {
+            request = "Overnight Care";
+        }
+
+        if(PetTransport == true)
+        {
+            request = "Pet transport";
+        }
+
+
+
         OrderControl.InsertOrder(
                 new Order()
                 {
 
-                    id = id,
                     name = name,
                     pet_name = pet_name,
                     email = email,
@@ -122,7 +148,7 @@ public partial class Default2 : System.Web.UI.Page
                 });
             ;
             string message = "Your order has been confirmed!";
-        Response.Write(@"<script language='javascript'>alert('Your Order Has Been Successfully Added!')</script>");
+        Response.Write(message);
         Response.Redirect("service request.aspx");
 
   
