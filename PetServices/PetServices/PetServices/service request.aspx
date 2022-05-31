@@ -20,7 +20,7 @@
 
               <div class="service">
                 <label class="option_item">
-                    <input type="checkbox" class="checkbox" ID="CB1" value="CB1" runat="server">
+                    <input type="checkbox" class="checkbox" ID="CB1" value="CB1" name="CB1" runat="server">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/pet-sitting-icon.png" alt="" style="height: 18px;">
@@ -29,7 +29,7 @@
                 </label>
 
                 <label class="option_item">
-                    <input type="checkbox" class="checkbox" ID="CB2" value="CB2">
+                    <input type="checkbox" class="checkbox" ID="CB2" value="CB2" name="CB2" runat="server">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/dog-walking-icon.png" alt="" style="height: 18px;">
@@ -38,7 +38,7 @@
                 </label>
 
                 <label class="option_item">
-                    <input type="checkbox" class="checkbox" ID="CB3" value="CB3">
+                    <input type="checkbox" class="checkbox" ID="CB3" value="CB3" name="CB3" runat="server">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/overnight-pet-care-icon.png" alt="" style="height: 18px;">
@@ -46,7 +46,7 @@
                   </div>
                 </label>
                 <label class="option_item">
-                    <input type="checkbox" class="checkbox" ID="CB4" value="CB4">
+                    <input type="checkbox" class="checkbox" ID="CB4" value="CB4" name="CB4" runat="server">
                   <div class="option_inner">
                     <div class="tickmark"></div>
                     <img src="images/pet-transport-icon.png" alt="" style="height: 18px;">

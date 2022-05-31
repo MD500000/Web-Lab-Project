@@ -101,29 +101,22 @@ public partial class Default2 : System.Web.UI.Page
         }
 
 
-
-        bool PetSitting = (Request.Form["CB1"] == "on") ? true : false;
-        bool PetWalking = (Request.Form["CB2"] == "on") ? true : false;
-        bool PetOvernight = (Request.Form["CB3"] == "on") ? true : false;
-        bool PetTransport = (Request.Form["CB4"] == "on") ? true: false;
-
-
-        if(PetSitting == true)
+        if(Request.Form["CB1"] != null && Request.Form["CB1"] == "on")
         {
             request = "Pet Sitting";
         }
 
-        if(PetWalking == true)
+        if(Request.Form["CB2"] != null && Request.Form["CB2"] == "on")
         {
             request = "Dog Walking";
         }
 
-        if(PetOvernight == true)
+        if(Request.Form["CB3"] != null && Request.Form["CB3"] == "on")
         {
             request = "Overnight Care";
         }
 
-        if(PetTransport == true)
+        if(Request.Form["CB4"] != null && Request.Form["CB4"] == "on")
         {
             request = "Pet transport";
         }
@@ -146,10 +139,8 @@ public partial class Default2 : System.Web.UI.Page
                     Request = request
 
                 });
-            ;
-            string message = "Your order has been confirmed!";
-        Response.Write(message);
-        Response.Redirect("service request.aspx");
+
+        Response.Write("<script>alert('Your Order Has Been Confirmed');</script>");
 
   
 
