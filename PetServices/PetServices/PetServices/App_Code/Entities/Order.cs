@@ -37,7 +37,12 @@ public class Order
 
     public String ADDRESS_2 { get; set; }
 
+    public String Additional_Comments { get; set; }
+
     public String Request { get; set; }
+
+
+
 
 
 }

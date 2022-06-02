@@ -118,7 +118,7 @@
                 </div>
   
                 <div class="field-wrap">
-                  <textarea class="form-control p-4" rows="6" id="message" placeholder="Speical Requests" data-validation-required-message="Please enter your message"></textarea>
+                  <textarea class="form-control p-4" rows="6" id="message" placeholder="Speical Requests" data-validation-required-message="Please enter your message" name="AdditionalComments"></textarea>
                   <p class="help-block text-danger"></p>
                   
                 </div>

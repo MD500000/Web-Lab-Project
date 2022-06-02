@@ -44,8 +44,8 @@ public static void InsertOrder(Order order)
     {
         connection.Open();
 
-        SqlCommand command = new SqlCommand("INSERT INTO [REQUEST_SERVICE] (NAME,PET_NAME,EMAIL,PHONE_NUMBER,PET_TYPE,LOCATION,ZIP_CODE, ADDRESS_1, ADDRESS_2, REQUEST,ADDITIONAL_COMMENTS) VALUES (@NAME, @PET_NAME, @EMAIL, @PHONE_NUMBER, @PET_TYPE, @LOCATION, @ZIP_CODE, @ADDRESS_1, @ADDRESS_2, @REQUEST,@ADDITIONAL_COMMENTS)", connection);
-        command.CommandType = CommandType.Text;
+            SqlCommand command = new SqlCommand("INSERT INTO [REQUEST_SERVICE] (NAME,PET_NAME,EMAIL,PHONE_NUMBER,PET_TYPE,LOCATION,ZIP_CODE, ADDRESS_1, ADDRESS_2, REQUEST,Additional_Comments) VALUES (@NAME, @PET_NAME, @EMAIL, @PHONE_NUMBER, @PET_TYPE, @LOCATION, @ZIP_CODE, @ADDRESS_1, @ADDRESS_2, @REQUEST,@ADDITIONAL_COMMENTS)", connection);
+            command.CommandType = CommandType.Text;
 
             command.Parameters.Add(new SqlParameter("@NAME", order.name));
             command.Parameters.Add(new SqlParameter("@PET_NAME", order.pet_name));
@@ -57,6 +57,7 @@ public static void InsertOrder(Order order)
             command.Parameters.Add(new SqlParameter("@ADDRESS_1", order.ADDRESS_1));
             command.Parameters.Add(new SqlParameter("@ADDRESS_2", order.ADDRESS_2));
             command.Parameters.Add(new SqlParameter("@REQUEST", order.Request));
+            command.Parameters.Add(new SqlParameter("@ADDITIONAL_COMMENTS", order.Additional_Comments));
 
             command.ExecuteNonQuery();
     }
