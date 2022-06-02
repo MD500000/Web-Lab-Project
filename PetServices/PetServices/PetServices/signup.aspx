@@ -38,7 +38,7 @@
                             <input type="checkbox" class="checkbox" required="">
                             <font size="2">I Agree To The Terms & Conditions</font>
                         </div>
-                        <asp:button type="submit" ID="registerButton" class="button button-block" Text="Sign-Up" OnClick="registerButton_Click" runat="server"></asp:button>
+                        <asp:button type="submit" ID="registerButton" class="button-rq" Text="Sign-Up" OnClick="registerButton_Click" runat="server"></asp:button>
                      
                         <asp:CompareValidator ID="comparePasswordValidator" runat="server" ErrorMessage="Passwords do not match!" ControlToCompare="PasswordText" ControlToValidate="confirmPasswordText"></asp:CompareValidator>
 

@@ -10,6 +10,11 @@ public partial class Default2 : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        CB1.InputAttributes.Add("class", "checkbox");
+        CB2.InputAttributes.Add("class", "checkbox");   
+        CB3.InputAttributes.Add("class", "checkbox");
+        CB4.InputAttributes.Add("class", "checkbox");
+
     }
 
     protected void ServiceRequestButton_Click(object sender, EventArgs e)
@@ -33,6 +38,7 @@ public partial class Default2 : System.Web.UI.Page
         string request="";
         int TypeIndex = PetTypeDropDown.SelectedIndex;
         int LocationIndex = LocationDropDown.SelectedIndex;
+        string additional = Request.Form["AdditionalComments"];
 
 
         switch (TypeIndex)
@@ -101,26 +107,25 @@ public partial class Default2 : System.Web.UI.Page
         }
 
 
-        if(Request.Form["CB1"] != null && Request.Form["CB1"] == "on")
+        if(CB1.Checked == true)
         {
             request = "Pet Sitting";
         }
 
-        if(Request.Form["CB2"] != null && Request.Form["CB2"] == "on")
+        if(CB2.Checked == true)
         {
             request = "Dog Walking";
         }
 
-        if(Request.Form["CB3"] != null && Request.Form["CB3"] == "on")
+        if(CB3.Checked == true)
         {
             request = "Overnight Care";
         }
 
-        if(Request.Form["CB4"] != null && Request.Form["CB4"] == "on")
+        if(CB4.Checked == true)
         {
-            request = "Pet transport";
+            request = "Pet Taxi";
         }
-
 
 
         OrderControl.InsertOrder(
@@ -136,7 +141,8 @@ public partial class Default2 : System.Web.UI.Page
                     zip_code = zip_code,
                     ADDRESS_1 = address_1,
                     ADDRESS_2 = address_2,
-                    Request = request
+                    Request = request,
+                    Additional_Comments = additional
 
                 });
 

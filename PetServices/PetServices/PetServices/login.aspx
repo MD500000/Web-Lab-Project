@@ -15,20 +15,16 @@
 
                         <div>
                             <div class="field-wrap">
-                                <asp:TextBox ID="emailText" placeholder="Email Address" required runat="server" ></asp:TextBox>
+                                <asp:TextBox ID="emailText" placeholder="Email Address" runat="server" ></asp:TextBox>
                             </div>
 
                             <div class="field-wrap">
-                                <asp:TextBox ID="passwordText" placeholder="Password" TextMode="Password" required runat="server"></asp:TextBox>
-                            </div>
-
-                            <div class="field-wrap">
-                                <asp:TextBox ID="confirmPassText" TextMode="Password" placeholder="Repeat Password" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="passwordText" placeholder="Password" TextMode="Password" runat="server"></asp:TextBox>
                             </div>
                             <input type="checkbox" class="checkbox">
                             <font size="2">Remember Me</font>
                         </div>
-                        <asp:button type="submit" ID="loginsubmitButton" class="button button-block" Text="Login" runat="server" OnClick="loginsubmitButton_Click"></asp:button>
+                        <asp:button type="submit" ID="loginsubmitButton" CssClass="button-rq" Text="Login" runat="server" OnClick="loginsubmitButton_Click"></asp:button>
                         <asp:Label ID="loginValidationLabel" runat="server" Visible="false" ForeColor="Red" />
                     </form>
 
