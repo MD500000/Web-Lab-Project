@@ -38,7 +38,6 @@ public partial class Default2 : System.Web.UI.Page
         string request="";
         int TypeIndex = PetTypeDropDown.SelectedIndex;
         int LocationIndex = LocationDropDown.SelectedIndex;
-        string additional = Request.Form["AdditionalComments"];
 
 
         switch (TypeIndex)
@@ -142,7 +141,6 @@ public partial class Default2 : System.Web.UI.Page
                     ADDRESS_1 = address_1,
                     ADDRESS_2 = address_2,
                     Request = request,
-                    Additional_Comments = additional
 
                 });
 

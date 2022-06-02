@@ -57,7 +57,6 @@ public static void InsertOrder(Order order)
             command.Parameters.Add(new SqlParameter("@ADDRESS_1", order.ADDRESS_1));
             command.Parameters.Add(new SqlParameter("@ADDRESS_2", order.ADDRESS_2));
             command.Parameters.Add(new SqlParameter("@REQUEST", order.Request));
-            command.Parameters.Add(new SqlParameter("@ADDITIONAL_COMMENTS", order.Additional_Comments));
 
             command.ExecuteNonQuery();
     }
