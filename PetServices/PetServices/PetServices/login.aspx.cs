@@ -9,7 +9,7 @@ public partial class Default2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Session.Clear();
     }
 
     protected void loginsubmitButton_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ public partial class Default2 : System.Web.UI.Page
                 Session["fname"] = user.fname;
                 Session["lname"] = user.lname;
 
-                Response.Redirect("service request.aspx");
+                Response.Redirect("services.aspx");
             }
 
         }

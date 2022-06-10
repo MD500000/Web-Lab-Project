@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Request Service" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="service request.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="Order" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="service request.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

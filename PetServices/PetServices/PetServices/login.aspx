@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -10,8 +10,6 @@
             <div class="tab-content">
                 <div id="signup">
                     <h2 id="h2-signup">Login</h2>
-
-                    <form action="/" method="post">
 
                         <div>
                             <div class="field-wrap">
@@ -26,17 +24,14 @@
                         </div>
                         <asp:button type="submit" ID="loginsubmitButton" CssClass="button-rq" Text="Login" runat="server" OnClick="loginsubmitButton_Click"></asp:button>
                         <asp:Label ID="loginValidationLabel" runat="server" Visible="false" ForeColor="Red" />
-                    </form>
-
+                    
                 </div>
-
 
             </div>
             <!-- tab-content -->
 
         </div>
         <!-- /form -->
-    </div>
     </div>
 
     <!--Sign up Forum Section end-->

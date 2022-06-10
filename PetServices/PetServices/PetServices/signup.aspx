@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="signup.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="Registration" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="signup.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -10,8 +10,6 @@
             <div class="tab-content">
                 <div id="signup">
                     <h2 id="h2-signup">Registration</h2>
-
-                    <form action="/" method="post">
 
                         <div class="top-row">
                             <div class="field-wrap">

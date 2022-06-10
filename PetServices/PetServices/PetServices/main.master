@@ -31,15 +31,12 @@
 
         <div class="working-hours">
 
-
-        Working hours are currently from 10 AM To 8 PM!
-
-
-
-
-        <!--Navbar start-->
+            <asp:Literal Text="" ID="topTextLiteral" runat="server" />
+        
+  
     </div>
 
+    <!--Navbar start-->
     <div class="navbar">
         <p>Pets United </p>
 
