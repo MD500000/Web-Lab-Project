@@ -13,25 +13,25 @@
 
                         <div class="top-row">
                             <div class="field-wrap">
-                                <asp:TextBox ID="fNameText" placeholder="First Name" required runat="server"></asp:TextBox>
+                                <asp:TextBox ID="fNameText" placeholder="First Name" required="" runat="server"></asp:TextBox>
                             </div>
 
                             <div class="field-wrap">
-                                <asp:TextBox ID="lNameText" placeholder="Last Name" required runat="server"></asp:TextBox>
+                                <asp:TextBox ID="lNameText" placeholder="Last Name" required="" runat="server"></asp:TextBox>
                             </div>
                         </div>
 
                         <div>
                             <div class="field-wrap">
-                                <asp:TextBox ID="EmailText" placeholder="Email Address" required runat="server"></asp:TextBox>
+                                <asp:TextBox ID="EmailText" placeholder="Email Address" required="" runat="server"></asp:TextBox>
                             </div>
 
                             <div class="field-wrap">
-                                <asp:TextBox ID="PasswordText" TextMode="Password" placeholder="Password" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="PasswordText" TextMode="Password" required="" placeholder="Password" runat="server"></asp:TextBox>
                             </div>
 
                             <div class="field-wrap">
-                                <asp:TextBox ID="confirmPasswordText" TextMode="Password" placeholder="Repeat Password" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="confirmPasswordText" TextMode="Password" required="" placeholder="Repeat Password" runat="server"></asp:TextBox>
                             </div>
                             <input type="checkbox" class="checkbox" required="">
                             <font size="2">I Agree To The Terms & Conditions</font>

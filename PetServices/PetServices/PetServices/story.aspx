@@ -26,7 +26,6 @@
                 <h1 id="h1-text-2">Our Story</h1>
                 <p id="p-text">When we first started Pets United, our goal was simple : Provide the best possible care and services for pets, and their owners! We take every part of our business very seriously, and are commited to providing the best experiences. </p>
 
-                <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
 
             </div>
 

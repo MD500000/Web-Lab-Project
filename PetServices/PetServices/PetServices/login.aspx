@@ -13,11 +13,11 @@
 
                         <div>
                             <div class="field-wrap">
-                                <asp:TextBox ID="emailText" placeholder="Email Address" runat="server" ></asp:TextBox>
+                                <asp:TextBox ID="emailText" placeholder="Email Address" required="" runat="server" ></asp:TextBox>
                             </div>
 
                             <div class="field-wrap">
-                                <asp:TextBox ID="passwordText" placeholder="Password" TextMode="Password" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="passwordText" placeholder="Password" required="" TextMode="Password" runat="server"></asp:TextBox>
                             </div>
                             <input type="checkbox" class="checkbox">
                             <font size="2">Remember Me</font>

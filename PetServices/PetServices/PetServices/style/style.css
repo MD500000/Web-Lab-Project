@@ -140,6 +140,12 @@ h1 {
     font-size: 30px;
 }
 
+.header3 {
+    padding-top: 3rem;
+    text-align: center;
+    background-size: cover;
+}
+
 #slider {
     max-height: 100%;
     max-height: 100%;
@@ -997,11 +1003,10 @@ ol {
 
 .flex-container {
     display: flex;
-    background-color: white;
+    background-color: #eee;
     padding: 50px;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/ULPS-Cat-grooming-AdobeStock_313891439-1080x675.jpg");
     background-size: cover;
 }
 
@@ -1015,7 +1020,7 @@ ol {
 .form {
     background: black;
     padding: 40px;
-    max-width: 600px;
+    max-width: 400px;
     margin: 40px auto;
     border-radius: 4px;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -1273,6 +1278,7 @@ p {
     flex-flow: row wrap;
     max-width: 100%;
     padding: 150px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -1342,7 +1348,120 @@ figure.image {
         background: rgba(0,0,0,0.4);
     }
 
+/*service price start*/
 
+.columnsp {
+    float: left;
+    padding: 20px;
+    max-width: 25%;
+}
+
+.servicep {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    padding: 200px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.prices {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: white;
+}
+
+
+    .prices .top {
+        /*background-color: #111;*/
+        color: white;
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .prices li {
+        /*border-bottom: 1px solid #eee;*/
+        padding: 20px;
+        text-align: center;
+    }
+
+    .prices .grey {
+        background-color: #ccc;
+        font-size: 20px;
+    }
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+figure.image img {
+    width: 100%;
+}
+
+figure.image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+    figure.image figcaption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        bottom: 4px;
+        background: rgba(0,0,0,0.0);
+    }
+
+.sc_price_price {
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+.sc_price_value {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 0.7;
+    letter-spacing: 0;
+}
+
+    .sc_price_value .from {
+        font-size: 0.4665em;
+        font-weight: 600;
+        line-height: 1.5;
+        vertical-align: super;
+    }
+
+    .sc_price_value .currency {
+        font-size: 0.4665em;
+        font-weight: 800;
+        line-height: 1.5;
+        vertical-align: super;
+    }
+
+.sc_price_period {
+    text-transform: uppercase;
+    font-size: 0.933em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/*service price end*/
 
 /*Button login/reg start*/
 
