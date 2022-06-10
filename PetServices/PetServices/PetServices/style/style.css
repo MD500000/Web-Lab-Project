@@ -1128,6 +1128,8 @@ p {
 .service {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
     .service .option_item {

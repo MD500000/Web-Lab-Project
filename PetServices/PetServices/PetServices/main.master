@@ -7,7 +7,7 @@
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=d  evice-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/afc30431c1.js" crossorigin="anonymous"></script>
@@ -45,9 +45,9 @@
 
         <a href="index.aspx">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">
+            <div class="dropbtn">
                 Services
-            </button>
+            </div>
             <div class="dropdown-content">
                 <a href="care.aspx">Vet Care</a>
                 <a href="services.aspx">Grooming</a>
@@ -56,8 +56,8 @@
         <a href="story.aspx">Our Story</a>
 
         <div class="topnav-right">
-            <a href="login.aspx">Login</a>
-            <a href="signup.aspx">Register</a>
+            <a href="login.aspx" id="LoginButton" runat="server">Login</a>
+            <a href="signup.aspx" id="RegisterButton" runat="server">Register</a>
             <asp:Button ID="RequestServiceButton" runat="server" Text="Request Service" OnClick="RequestServiceButton_Click" CssClass="button-rq2"/>
         </div>
     </div>
@@ -109,11 +109,12 @@
                         <a href="#">Sitemap</a>
                     </li>
                 </ul>
-
                 <div class="legal">
                     <p>&copy; 2022 Pets United. All rights reserved.</p>
 
                 </div>
+                </ul>
+
     </footer>
     <!-- Footer end -->
 </form>

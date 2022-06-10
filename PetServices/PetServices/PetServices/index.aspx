@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="Main" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -12,74 +12,41 @@
     </div>
 
 
-
     <div class="header2">
         <h1>Need your pet taken care of?</h1>
         <p>Look no further! We have a team of highly trained professionals ready to take good care of your pet</p>
     </div>
 
 
-
-
     <div id="slider">
 
-
         <img src="./images/pic1.jpg">
-
-
-
-
         <img src="./images/pic2.jpg">
-
-
-
-
         <img src="./images/pic3.jpg">
 
-
-
     </div>
-
-
 
 
     <h1 id="header-groomers">Meet our team of professional groomers</h1>
 
     <div class="body-section">
 
-
-
         <div>
-
-
             <img src="images/image.jpg">
-
         </div>
 
 
         <div>
-
-
-
             <img src="images/dog-grooming-1.jpg">
-
         </div>
 
         <div>
-
-
-
             <img src="images/700-00866708en_Masterfile.jpg">
-
         </div>
 
         <div>
-
             <img src="images/side-view-of-male-groomer-in-mask-and-with-scissors-cutting-fur-of-white-fluffy-miniature-poodle-in-grooming-salon-ADSF20130.jpg">
-
         </div>
-
-
 
 
         <div>
@@ -88,21 +55,17 @@
 
             <div class="text-container">
 
-
-
                 "I have a pup named Zoe who didn't like grooming. She was a litle nervous at first, but after a few appointments she became more comfortable. Zoe is such a champ!"
 
             </div>
 
             <ul class="stars">
 
-
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
 
             </ul>
 
@@ -120,17 +83,15 @@
             <ul class="stars">
 
 
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
 
             </ul>
 
         </div>
-
 
         <div>
 
@@ -144,14 +105,11 @@
             <ul class="stars">
 
 
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-
-
-
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
 
             </ul>
 
@@ -169,19 +127,16 @@
             <ul class="stars">
 
 
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
 
 
             </ul>
 
         </div>
-
-
-
 
     </div>
 

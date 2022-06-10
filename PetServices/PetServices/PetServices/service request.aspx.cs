@@ -9,7 +9,13 @@ public partial class Default2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!Page.IsPostBack)
+        {   
+            if (Session["email"] == null)
+                Response.Redirect("login.aspx");
+        }
+        NameBox.Text = Session["fname"].ToString() + " " + Session["lname"].ToString();
+        MailBox.Text = Session["email"].ToString();
         CB1.InputAttributes.Add("class", "checkbox");
         CB2.InputAttributes.Add("class", "checkbox");   
         CB3.InputAttributes.Add("class", "checkbox");
@@ -24,111 +30,37 @@ public partial class Default2 : System.Web.UI.Page
         {
             return;
         }
-
-
+        
         string name = NameBox.Text ;
         string pet_name = PetBox.Text;
         string email = MailBox.Text;
         string phone_number = NumberBox.Text;
-        string pet_type="";
-        string location="";
+        string pet_type= PetTypeDropDown.SelectedValue;
+        string location= LocationDropDown.SelectedValue;
         string zip_code = ZipBox.Text;
         string address_1 = Address1Box.Text;
         string address_2 = Address2Box.Text;
         string request="";
-        int TypeIndex = PetTypeDropDown.SelectedIndex;
-        int LocationIndex = LocationDropDown.SelectedIndex;
-        string additional = "";
-
-        additional= Request.Form["AdditionalComments"];
-
-
-
-
-        switch (TypeIndex)
-        {
-
-            case 1:
-                {
-                    pet_type = "Dog";
-                    break;
-                }
-
-            case 2:
-                {
-                    pet_type = "Cat";
-                    break;
-                }
-
-            case 3:
-                {
-                    pet_type = "Bird";
-                    break;
-                }
-
-            case 4:
-                {
-                    pet_type = "Horse";
-                    break;
-                }
-        }
-
-        switch (LocationIndex)
-        {
-
-
-            case 1:
-                {
-                    location = "Saida";
-                    break;
-                }
-
-            case 2:
-                {
-                    location = "Beirut";
-                    break;
-                }
-
-
-            case 3:
-                {
-                    location = "Zahle";
-                    break;
-                }
-
-            case 4:
-                {
-                    location = "Baalbek";
-                    break;
-                }
-
-            case 5:
-                {
-                    location = "Kab-Elias";
-                    break;
-                }
-        
-        }
-
+        string additional = Request.Form["AdditionalComments"];
 
         if(CB1.Checked == true)
         {
-            request = "Pet Sitting";
+            request += " Pet Sitting";
         }
 
         if(CB2.Checked == true)
         {
-            request = "Dog Walking";
+            request += " Dog Walking";
         }
 
         if(CB3.Checked == true)
         {
-            request = "Overnight Care";
+            request += " Overnight Care";
         }
 
         if(CB4.Checked == true)
         {
-            request = "Pet Taxi";
+            request += " Pet Taxi";
         }
 
 
@@ -136,7 +68,7 @@ public partial class Default2 : System.Web.UI.Page
                 new Order()
                 {
 
-                    name = name,
+                    name = Session["fname"].ToString(),
                     pet_name = pet_name,
                     email = email,
                     phone_number = phone_number,

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="service request.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="Request Service" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="service request.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -58,7 +58,7 @@
 
               <!-- services end -->
             
-            <form action="/" method="post">
+           
             
             <div class="top-row">
               <div class="field-wrap">
@@ -124,18 +124,15 @@
                 </div>
               </div>
                 <asp:Button ID="ServiceRequestButton" runat="server" Text="Start Your Service Request" CssClass="button-rq" OnClick="ServiceRequestButton_Click"/>
-          </div>
+          
+                </div>
           
           
             </div><!-- tab-content -->
         
         </div>
     
-        <div class="section__item section__item--end">
-          <font size="6">Already a Customer?</font>
-  
-          <button type="submit" class="button-rq">Log In and Schedule Service</button>
-        </div>
+
       </section>
   
       <!--Request Forum Section end-->
