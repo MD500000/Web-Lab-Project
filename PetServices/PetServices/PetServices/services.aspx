@@ -8,7 +8,7 @@
 
 
   <div class="header3">
-        <font size="6">Services</font>
+        Services
     </div>
         <div class="servicep">
           
@@ -26,7 +26,7 @@
                     </li>
 
                     <li>
-                        <h2>Pet Sitting Service</h2>
+                        <h2>Pet Sitting</h2>
                     </li>
                     <li>
                         <p>No stress or worrying about your pet and home while you are traveling.</p>
@@ -51,7 +51,7 @@
                         </li>
 
                     <li>
-                        <h2>Dog Walking Service</h2>
+                        <h2>Pet Walking</h2>
                     </li>
                     <li>
                         <p>We provide individualized daily dog walking that is tailored to fit your needs.</p>
@@ -77,7 +77,7 @@
                         </li>
 
                     <li>
-                        <h2>Overnight care Service</h2>
+                        <h2>Overnight Care</h2>
                     </li>
                     <li>
                         <p>Overnight pet care provides in-home pet sitting service for your furry friend.</p>
@@ -103,7 +103,7 @@
                         </li>
 
                     <li>
-                        <h2>Pet Taxi Service</h2>
+                        <h2>Pet Taxi</h2>
                     </li>
                     <li>
                         <p>We provide high-quality and safe transportation services for your pet,
@@ -120,7 +120,9 @@
 
 
         <div class="header3">
-        <font size="6">Primium Bundles</font><br><br>
+        Premium Bundles
+
+
     </div>
         <div class="pricing">
 
@@ -135,13 +137,12 @@
                                 </div>
                             </figcaption>
                         </figure>
-                    </li>
+                    
                     <li class="grey">Bath Bundle / $ 15</li>
                     <li>Washing and Drying of Fluff</li>
                     <li>Special Doggy Bath</li>
                     <li>De-Shedding</li>
                     <li>Special Cologne</li>
-                    <li style="background-color: #ED6436"><a href="service request.aspx" class="button2">Sign Up</a></li>
                 </ul>
             </div>
 
@@ -160,7 +161,6 @@
                     <li>Ear Cleaning</li>
                     <li>Customized Haircut</li>
                     <li>Hydrotherapy Hath</li>
-                    <li style="background-color: #04AA6D"><a href="service request.aspx" class="button2">Sign Up</a></li>
                 </ul>
             </div>
 
@@ -180,7 +180,6 @@
                     <li>Ear Cleaning</li>
                     <li>Nail Trimmings</li>
                     <li>Hydrotherapy Bath</li>
-                    <li style="background-color: #ED6436"><a href="service request.aspx" class="button2">Sign Up</a></li>
                 </ul>
             </div>
 
