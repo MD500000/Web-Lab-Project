@@ -78,6 +78,12 @@
               <div class="field-wrap">
                   <asp:TextBox ID="NumberBox" runat="server" placeholder="Phone Number"></asp:TextBox>
               </div>
+
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
+                 ControlToValidate="NumberBox" runat="server"
+                 ErrorMessage="Only Numbers allowed"
+                   ValidationExpression="\d+" ForeColor="Red    ">
+                </asp:RegularExpressionValidator>
             </div>
   
             <div class="top-row">
@@ -108,9 +114,16 @@
                 <div class="field-wrap">
                     <asp:TextBox ID="ZipBox"  runat="server" placeholder="Zip Code"></asp:TextBox>
                 </div>
+
+
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
+                 ControlToValidate="ZipBox" runat="server"
+                 ErrorMessage="Only Numbers allowed"
+                   ValidationExpression="\d+" ForeColor="Red">
+                </asp:RegularExpressionValidator>
   
                 <div class="field-wrap">
-                    <asp:TextBox ID="Address1Box" runat="server" placeholder="Address Line 1"></asp:TextBox>
+                    <asp:TextBox ID="Address1Box" runat="server" placeholder="Address Line 1*" required></asp:TextBox>
                 </div>
   
                 <div class="field-wrap">
