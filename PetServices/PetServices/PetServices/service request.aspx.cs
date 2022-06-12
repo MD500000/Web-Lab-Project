@@ -35,14 +35,23 @@ public partial class Default2 : System.Web.UI.Page
         string pet_name = PetBox.Text;
         string email = MailBox.Text;
         string phone_number = NumberBox.Text;
-        string pet_type= PetTypeDropDown.SelectedValue;
-        string location= LocationDropDown.SelectedValue;
         string zip_code = ZipBox.Text;
         string address_1 = Address1Box.Text;
         string address_2 = Address2Box.Text;
-        string request="";
+
+        string pet_type= PetTypeDropDown.SelectedValue;
+        string location= LocationDropDown.SelectedValue;
+
         string additional = Request.Form["AdditionalComments"];
 
+        string request="";
+        
+        string bundle = Bundles.SelectedValue;
+
+        if (!bundle.Equals("Select Bundle"))
+        {
+            request += bundle;
+        }
         if(CB1.Checked == true)
         {
             request += " Pet Sitting";
@@ -68,7 +77,7 @@ public partial class Default2 : System.Web.UI.Page
                 new Order()
                 {
 
-                    name = Session["fname"].ToString(),
+                    name = name,
                     pet_name = pet_name,
                     email = email,
                     phone_number = phone_number,
