@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
         <div class="container">
-        <form action="action_page.php">
+        
 
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -14,14 +14,13 @@
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
             <label for="countrybox">Country</label>
-            <input type="text" id="countrybox" name="country" placeholder="Your country.." </select>
+            <input type="text" id="countrybox" name="country" placeholder="Your country.." />
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="button" value="Submit">
 
-        </form>
     </div>
 
 </asp:Content>
