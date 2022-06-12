@@ -78,14 +78,10 @@
               </div>
           
               <div class="field-wrap">
-                  <asp:TextBox ID="NumberBox" runat="server" placeholder="Phone Number"></asp:TextBox>
+                  <asp:TextBox ID="NumberBox" required="" runat="server" placeholder="Phone Number" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);"></asp:TextBox>
               </div>
 
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
-                 ControlToValidate="NumberBox" runat="server"
-                 ErrorMessage="Only Numbers allowed"
-                   ValidationExpression="\d+" ForeColor="Red    ">
-                </asp:RegularExpressionValidator>
+              
             </div>
   
             <div class="top-row">
@@ -112,20 +108,27 @@
   
             </div>
   
-            <div>
+
+            <div class="top-row">
                 <div class="field-wrap">
-                    <asp:TextBox ID="ZipBox"  runat="server" placeholder="Zip Code"></asp:TextBox>
+                    <asp:TextBox ID="ZipBox"  runat="server" placeholder="Zip Code" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);"></asp:TextBox>
                 </div>
 
 
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
-                 ControlToValidate="ZipBox" runat="server"
-                 ErrorMessage="Only Numbers allowed"
-                   ValidationExpression="\d+" ForeColor="Red">
-                </asp:RegularExpressionValidator>
-  
+              <div>
+               <asp:DropDownList ID="Bundles" runat="server">
+                     <asp:ListItem Value="">Select Bundle </asp:ListItem>
+                      <asp:ListItem>Bath Bundle</asp:ListItem>
+                      <asp:ListItem>Spa Bundle</asp:ListItem>
+                      <asp:ListItem>All In Pup Package</asp:ListItem>
+                  </asp:DropDownList>
+
+            </div>
+                </div>
+
+
                 <div class="field-wrap">
-                    <asp:TextBox ID="Address1Box" runat="server" placeholder="Address Line 1*" required></asp:TextBox>
+                    <asp:TextBox ID="Address1Box" runat="server" placeholder="Address Line 1*" required=""></asp:TextBox>
                 </div>
   
                 <div class="field-wrap">
