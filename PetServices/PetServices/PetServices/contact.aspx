@@ -8,18 +8,18 @@
         
 
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <asp:TextBox id="fname" name="firstname" placeholder="Your name.." runat="server"/>
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <asp:TextBox id="lname" name="lastname" placeholder="Your last name.." runat="server"/>
 
             <label for="countrybox">Country</label>
-            <input type="text" id="countrybox" name="country" placeholder="Your country.." />
+            <asp:TextBox id="countrybox" name="country" placeholder="Your country.." runat="server" />
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:200px"></textarea>
+            <asp:TextBox id="subject" name="subject" placeholder="What's on your mind?" style="height:200px" textmode="MultiLine" runat="server"></asp:TextBox>
 
-            <input type="button" value="Submit">
+            <asp:Button ID="submitButton" text="Submit"  runat="server" onclick="ButtonClick" CssClass="button-rq"/>
 
     </div>
 

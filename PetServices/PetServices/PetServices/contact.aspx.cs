@@ -11,4 +11,26 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
+
+
+
+    protected void ButtonClick(object sender, EventArgs e)
+    {
+
+        ContactControl.InsertContact(
+               new Contact()
+               {
+
+                  fname = fname.Text,
+                  lname=lname.Text,
+                  country = countrybox.Text,
+                  subject = subject.Text
+
+
+               });
+
+        Response.Write("<script>alert('Your information has been received, thank you!');</script>");
+
+
+    }
 }
